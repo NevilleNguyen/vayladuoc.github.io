@@ -94,9 +94,9 @@
 								<div class="card">
 									<img src="assets/images/product-1.png" class="card-img-top" alt="vay kinh doanh">
 									<div class="card-body">
-										<h3 style="font-weight: bold; color: #4e4e50; text-decoration: none;"><strong>Vay mua nhà</strong></h3>
-										<p style="color: #4e4e50; text-decoration: none;">Hạnh phúc vẹn tròn nơi tổ ấm yêu thương</p>
-										<p style="color: #0772ba; text-decoration: underline;">Tìm hiểu thêm</p>
+										<h3 class="product-title">Vay mua nhà</h3>
+										<p class="product-desc">Hạnh phúc vẹn tròn nơi tổ ấm yêu thương</p>
+										<p class="product-link">Tìm hiểu thêm</p>
 									</div>
 								</div>
 							</a>
@@ -106,9 +106,9 @@
 								<div class="card">
 									<img src="assets/images/product-2.png" class="card-img-top" alt="vay kinh doanh">
 									<div class="card-body">
-										<h3 style="font-weight: bold; color: #4e4e50; text-decoration: none;"><strong>Vay mua ô tô</strong></h3>
-										<p style="color: #4e4e50; text-decoration: none;">Xế hộp đón đưa mỗi ngày</p>
-										<p style="color: #0772ba; text-decoration: underline;">Tìm hiểu thêm</p>
+										<h3 class="product-title">Vay mua ô tô</h3>
+										<p class="product-desc">Xế hộp đón đưa mỗi ngày</p>
+										<p class="product-link">Tìm hiểu thêm</p>
 									</div>
 								</div>
 							</a>
@@ -118,9 +118,9 @@
 								<div class="card">
 									<img src="assets/images/product-4.png" class="card-img-top" alt="vay kinh doanh">
 									<div class="card-body">
-										<h3 style="font-weight: bold; color: #4e4e50; text-decoration: none;"><strong>Vay tiêu dùng</strong></h3>
-										<p style="color: #4e4e50; text-decoration: none;">Cuộc sống tiện nghi, đủ đầy hạnh phúc</p>
-										<p style="color: #0772ba; text-decoration: underline;">Tìm hiểu thêm</p>
+										<h3 class="product-title">Vay tiêu dùng</h3>
+										<p class="product-desc">Cuộc sống tiện nghi, đủ đầy hạnh phúc</p>
+										<p class="product-link">Tìm hiểu thêm</p>
 									</div>
 								</div>
 							</a>
@@ -130,9 +130,9 @@
 								<div class="card">
 									<img src="assets/images/product-4.png" class="card-img-top" alt="vay kinh doanh">
 									<div class="card-body">
-										<h3 style="font-weight: bold; color: #4e4e50; text-decoration: none;"><strong>Vay kinh doanh</strong></h3>
-										<p style="color: #4e4e50; text-decoration: none;">Cấp vốn kịp thời, thoả hoài bão lớn</p>
-										<p style="color: #0772ba; text-decoration: underline;">Tìm hiểu thêm</p>
+										<h3 class="product-title">Vay kinh doanh</h3>
+										<p class="product-desc">Cấp vốn kịp thời, thoả hoài bão lớn</p>
+										<p class="product-link">Tìm hiểu thêm</p>
 									</div>
 								</div>
 							</a>
@@ -141,6 +141,7 @@
 				</div>
 			</div>
 
+			<!-- pop-up form -->
 			<div class="popup-modal popup-register" data-popup="popup-register">
 				<div class="popup-inner">
 					<h4 class="popup-register-title">Đăng ký ngay</h4>
@@ -148,19 +149,19 @@
 						<div class="form-group required">
 							<input type="text" id="input-name" name="name" placeholder="Nhập họ và tên (bắt buộc)" required="required">
 							<label for="name" class="input-icon">
-								<img src="assets/images/commons/ic-user.png">
+							<img src="assets/images/commons/ic-user.png">
 							</label>
 						</div>
 						<div class="form-group required">
 							<input type="text" id="input-phone" name="phone" placeholder="Nhập số điện thoại (bắt buộc)" required="required">
 							<label for="phone" class="input-icon">
-								<img src="assets/images/commons/ic-phone.png">
+							<img src="assets/images/commons/ic-phone.png">
 							</label>
 						</div>
 						<div class="form-group">
 							<input type="text" id="input-email" name="email" placeholder="Nhập Email">
 							<label for="email" class="input-icon">
-								<img src="assets/images/commons/ic-email.png">
+							<img src="assets/images/commons/ic-email.png">
 							</label>
 						</div>
 						<div class="form-group">
@@ -173,22 +174,20 @@
 						</div>
 						<div class="form-group">
 							<select name="loan-type" id="input-loan-type">
-								<option value="Vay Mua nhà">Vay Mua nhà</option>
-								<option value="Vay Mua ô tô">Vay Mua ô tô</option>
-								<option value="Vay Tiêu dùng">Vay Tiêu dùng</option>
-								<option value="Vay Kinh doanh">Vay Kinh doanh</option>
+								<option value="Vay mua nhà">Vay mua nhà</option>
+								<option value="Vay mua ô tô">Vay mua ô tô</option>
+								<option value="Vay tiêu dùng">Vay tiêu dùng</option>
+								<option value="Vay kinh doanh">Vay kinh doanh</option>
 							</select>
 						</div>
-
-						<button type="submit" id="btn-register-submit" class="btn-register btn-primary">Đăng ký</button>
+						<div class="form-group">
+							<img src="http://115.84.179.234/handlers/captcha.ashx" id="captcha1">
+							<a class="button" id="btnReloadCapt" xss=removed><img src="assets/images/commons/ic-reload.png"></a>
+							<input type="text" style="width:30%" placeholder="Nhập mã bảo mật" name="captcha" maxlength="4">
+						</div>
+						<button type="submit" id="btn-register-submit" class="btn-register btn-primary">Đăng ký <span class="spinner"></span></button>
 					</form>
-
 					<a class="popup-close" data-popup-close="popup-register" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
-				</div>
-			</div>
-			<div class="advisory-register dl-sp">
-				<div class="inner-advisory-register">
-					<a href="#" data-popup-open="popup-register" title="Đăng ký ngay">Đăng ký ngay</a>
 				</div>
 			</div>
 

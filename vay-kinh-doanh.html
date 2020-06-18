@@ -5,13 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="format-detection" content="telephone=no"/>
-		<title>Vay Kinh doanh</title>
+		<title>Vay kinh doanh</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="assets/css/chosen.min.css">
-		<link rel="stylesheet" href="assets/css/styles.css?ver=1.42">
+		<link rel="stylesheet" href="assets/css/chosen.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
 	</head>
 	<body class="page">
 		<div id="wrapper">
@@ -172,62 +173,63 @@
 						<li data-popup-open="popup-register" class="message"><a href="#">Đăng ký ngay</a></li>
 					</ul>
 				</div>
-				<div class="popup-modal popup-register" data-popup="popup-register">
-					<div class="popup-inner">
-						<h4 class="popup-register-title">Đăng ký ngay</h4>
-						<form action="#" id="form-register" method="POST" role="form">
-							<div class="form-group required">
-								<input type="text" id="input-name" name="name" placeholder="Nhập họ và tên (bắt buộc)" required="required">
-								<label for="name" class="input-icon">
-									<img src="assets/images/commons/ic-user.png">
-								</label>
-							</div>
-							<div class="form-group required">
-								<input type="text" id="input-phone" name="phone" placeholder="Nhập số điện thoại (bắt buộc)" required="required">
-								<label for="phone" class="input-icon">
-									<img src="assets/images/commons/ic-phone.png">
-								</label>
-							</div>
-							<div class="form-group">
-								<input type="text" id="input-email" name="email" placeholder="Nhập Email">
-								<label for="email" class="input-icon">
-									<img src="assets/images/commons/ic-email.png">
-								</label>
-							</div>
-							<div class="form-group">
-								<select name="provinces" id="input-provinces">
-									<option value="">Chọn tỉnh thành</option>
-									<option value="Hà Nội">Hà Nội</option>
-									<option value="Đà Nẵng">Đà Nẵng</option>
-									<option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<select name="loan-type" id="input-loan-type">
-									<option value="Vay Mua nhà">Vay Mua nhà</option>
-									<option value="Vay Mua ô tô">Vay Mua ô tô</option>
-									<option value="Vay Tiêu dùng">Vay Tiêu dùng</option>
-									<option value="Vay Kinh doanh">Vay Kinh doanh</option>
-								</select>
-							</div>
-
-							<button type="submit" id="btn-register-submit" class="btn-register btn-primary">Đăng ký</button>
-						</form>
-
-						<a class="popup-close" data-popup-close="popup-register" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
-					</div>
-				</div>
-				<div class="advisory-register dl-sp">
-					<div class="inner-advisory-register">
-						<a href="#" data-popup-open="popup-register" title="Đăng ký ngay">Đăng ký ngay</a>
-					</div>
-				</div>
 			</main>
+
+			<!-- pop-up form -->
+			<div class="popup-modal popup-register" data-popup="popup-register">
+				<div class="popup-inner">
+					<h4 class="popup-register-title">Đăng ký ngay</h4>
+					<form action="#" id="form-register" method="POST" role="form">
+						<div class="form-group required">
+							<input type="text" id="input-name" name="name" placeholder="Nhập họ và tên (bắt buộc)" required="required">
+							<label for="name" class="input-icon">
+							<img src="assets/images/commons/ic-user.png">
+							</label>
+						</div>
+						<div class="form-group required">
+							<input type="text" id="input-phone" name="phone" placeholder="Nhập số điện thoại (bắt buộc)" required="required">
+							<label for="phone" class="input-icon">
+							<img src="assets/images/commons/ic-phone.png">
+							</label>
+						</div>
+						<div class="form-group">
+							<input type="text" id="input-email" name="email" placeholder="Nhập Email">
+							<label for="email" class="input-icon">
+							<img src="assets/images/commons/ic-email.png">
+							</label>
+						</div>
+						<div class="form-group">
+							<select name="provinces" id="input-provinces">
+								<option value="">Chọn tỉnh thành</option>
+								<option value="Hà Nội">Hà Nội</option>
+								<option value="Đà Nẵng">Đà Nẵng</option>
+								<option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<select name="loan-type" id="input-loan-type">
+								<option value="Vay mua nhà">Vay mua nhà</option>
+								<option value="Vay mua ô tô">Vay mua ô tô</option>
+								<option value="Vay tiêu dùng">Vay tiêu dùng</option>
+								<option value="Vay kinh doanh">Vay kinh doanh</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<img src="http://115.84.179.234/handlers/captcha.ashx" id="captcha1">
+							<a class="button" id="btnReloadCapt" xss=removed><img src="assets/images/commons/ic-reload.png"></a>
+							<input type="text" style="width:30%" placeholder="Nhập mã bảo mật" name="captcha" maxlength="4">
+						</div>
+						<button type="submit" id="btn-register-submit" class="btn-register btn-primary">Đăng ký <span class="spinner"></span></button>
+					</form>
+					<a class="popup-close" data-popup-close="popup-register" href="#"><img src="assets/images/commons/ic-close-form.png"></a>
+				</div>
+			</div>
+
 			<footer id="footer">
 				<div class="container">
 					<div class="ft-content">
 						<div class="ft-col">
-							<p>Bản quyền © 2019 thuộc về Ngân hàng TMCP Đại Chúng Việt Nam PVcomBank</p>
+							<p>Bản quyền © 2020 thuộc về Ngân hàng TMCP Đại Chúng Việt Nam PVcomBank</p>
 						</div>
 						<div class="ft-col">
 							<p>Hotline: 1900 5555 92</p>
@@ -241,7 +243,8 @@
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/autoNumeric.js"></script>
 		<script src="assets/js/chosen.jquery.min.js"></script>
-		<script src="assets/js/customs.js?ver=1.42"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/customs.js"></script>
 		<script>
 			$(document).ready(function() {
 			    $("input[name='amount']").autoNumeric('init', {
