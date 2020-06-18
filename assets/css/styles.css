@@ -1861,7 +1861,7 @@ footer, .box-ft {
         @media screen and (max-width: 768px) {
           .page #banner .main-page-info .form-box {
             padding: 10px; }
-
+          }
       .page #banner .main-page-info ul {
         font-size: 24px;
         padding-bottom: 17px; }
